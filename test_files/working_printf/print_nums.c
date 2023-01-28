@@ -75,4 +75,10 @@ int count_digit(int i)
 		u = i * -1;
 	else
 		u = i;
-
+	while (u != 0)
+	{
+		u /= 10;
+		d++;
+	}
+	return (d);
+}
